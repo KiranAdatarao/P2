@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess Tournament</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass container">
+  <h2>♟ Chess Matchmaking</h2>
+
+  <input type="file" id="excelFile" accept=".xlsx">
+
+  <div class="controls">
+    <input type="number" id="playerCount" value="8" min="2">
+    <button onclick="startTournament()">Start Tournament</button>
+  </div>
+
+  <h3 id="roundTitle"></h3>
+  <div id="matches"></div>
+
+  <button onclick="nextRound()">Next Round</button>
+  <button onclick="exportResults()">Export Results</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
